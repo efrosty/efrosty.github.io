@@ -1,0 +1,91 @@
+h1{
+    font-family:'Recursive', sans-serif;
+    font-size: 40px;
+    text-align:center;
+}
+.jumbotron{
+    background-color:#1D251F;
+    color:#6A896D;
+}
+
+
+.container-fluid{
+    background-color:#1D251F;
+}
+
+.navbar{
+    font-size:25px;
+}
+
+.bodyText{
+    background-color:#7d8d83;
+    padding: 40px;
+    font-family: 'Libre Baskerville', serif;
+    color:#EAEBE6;
+    font-size:20px;
+    
+}
+
+.footer{
+    text-align:center;
+    font-size:13px;
+    font-family: 'Libre Baskerville', serif;
+    background-color:#1D251F;
+    color:#6A896D;
+    
+}
+.card{
+    margin:50px 50px 50px 150px;
+}
+
+.col{
+    padding: 50px;
+}
+
+
+
+/*various filters and animations from 5.13-.15*/
+#imgOne{
+  animation: saturateFilter 7s forwards;
+}
+#imgTwo{
+  filter:hue-rotate(30deg);
+}
+#imgThree{
+  animation:invertFilter 7s forwards;
+}
+#imgOne, #imgTwo, #imgThree{
+    height:800px;
+  
+}
+@keyframes invertFilter {
+  from{
+    filter: invert(0%);
+  }
+  to{
+    filter: invert(100%);
+  }
+}
+@keyframes saturateFilter{
+  from{
+    filter: saturate(100%);
+  }
+  to{
+    filter: saturate(200%);
+  }
+}
+
+#imgFour, #imgFive, #imgSix:hover{
+  animation:saturateFilter 4s forwards;
+}
+
+.subheader{
+    text-transform:uppercase;
+}
+.iframe{
+    height:500px;
+}
+#longImage, #video{
+    width:200px;
+    height:315px;
+}
